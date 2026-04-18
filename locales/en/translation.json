@@ -1,5 +1,338 @@
 {
   "info": {
     "name": "Hypernex.Unity"
+  },
+  "login": {
+    "select_server": "Select a Server",
+    "saved_servers": "Saved Servers",
+    "new_servers": "New Server",
+    "where_to_connect": "Not sure where to connect?",
+    "connect_to": "Connect to {{domain}}",
+    "enter_address": "Enter Server Address...",
+    "select_account": "Select an Account",
+    "saved_accounts": "Saved Accounts",
+    "existing_account": "Existing Account",
+    "need_account": "Need an Account?",
+    "create_account": "Create a new account",
+    "enter_2fa": "Please enter your 2FA code."
+  },
+  "header": {
+    "home": "Home",
+    "worlds": "Worlds",
+    "avatars": "Avatars",
+    "social": "Social",
+    "inbox": "Inbox",
+    "profile": "Profile",
+    "search": "Search"
+  },
+  "side_bar":{
+    "home": {
+      "info": "Info",
+      "options": "Options",
+      "current_avatar": "Current Avatar",
+      "current_world": "Current World"
+    },
+    "worlds": {
+      "popular": "Popular",
+      "favorited": "Favorited",
+      "yours": "Yours"
+    },
+    "avatars": {
+      "popular": "Popular",
+      "favorited": "Favorited",
+      "yours": "Yours"
+    },
+    "social": {
+      "friends": "Friends",
+      "followed": "Followed",
+      "requests": "Requests"
+    },
+    "inbox": {
+      "inbox": "Inbox"
+    },
+    "search": {
+      "users": "Users",
+      "avatars": "Avatars",
+      "worlds": "Worlds"
+    }
+  },
+  "pages": {
+    "home": {
+      "info": {
+        "written_by": "Written By: {{username}}",
+        "read_more": "Read more..."
+      },
+      "options": {
+        "audio": {
+          "name": "Audio",
+          "voice_boost": {
+            "name": "Voices Boost",
+            "description": "Boosts Voice Volume by an amount."
+          },
+          "avatar_volume": {
+            "name": "Avatars",
+            "description": "The Volume of Sounds on Avatars."
+          },
+          "world_volume": {
+            "name": "World Sounds",
+            "description": "The Volume of Sounds in Worlds."
+          },
+          "microphone": {
+            "name": "Microphone",
+            "description": "Which Audio Device you use to Talk."
+          },
+          "noise_suppression": {
+            "name": "Noise Suppression",
+            "description": "Cancels out extra noise from your Microphone (RNNoise)."
+          }
+        },
+        "user": {
+          "name": "User",
+          "ui_theme": {
+            "name": "UI Theme",
+            "description": "A custom theme to color the menu."
+          },
+          "emoji_type": {
+            "name": "Emoji Type",
+            "description": "Which emoji pack to use."
+          },
+          "gesture": {
+            "name": "GestureIdentifier Type",
+            "description": "Which hand gesture type to use."
+          }
+        },
+        "vr": {
+          "name": "VR",
+          "snap_turn_degree": {
+            "name": "Snap Turn Degree",
+            "description": "Player rotation by a set degree."
+          },
+          "smooth_turn_speed": {
+            "name": "Smooth Turn Speed",
+            "description": "The player's rotation rate."
+          }
+        },
+        "security": {
+          "name": "Security",
+          "only_trusted_urls": {
+            "name": "Only Trusted URLs",
+            "description": "Use only URLs which are considered trustworthy by Hypernex."
+          }
+        },
+        "face_tracking": {
+          "name": "Face Tracking",
+          "enable_face_tracking": {
+            "name": "Enable Face Tracking"
+          },
+          "restart_label": "A Restart is Required!"
+        },
+        "advanced": {
+          "name": "Advanced",
+          "download_threads": {
+            "name": "Download Threads",
+            "description": "Max amount of threads used for downloads."
+          },
+          "max_memory_storage_cache": {
+            "name": "MaxMemoryStorageCache",
+            "description": "Max amount of storage from downloads in megabytes which is stored in memory."
+          }
+        }
+      },
+      "current_avatar": {
+        "saved_profiles": "Saved Profiles:",
+        "gesture_identifier": "Gesture Identifier:",
+        "avatar_scale": "Avatar Scale:"
+      },
+      "current_world": {
+        "hosted_by": "Hosted by {{name}}"
+      }
+    },
+    "worlds": {
+      "popular_label": "Popular Worlds",
+      "favorite_label": "Favorite Worlds",
+      "yours": "My Worlds",
+      "created_by": "Created by {{name}}"
+    },
+    "avatars": {
+      "popular_label": "Popular Avatars",
+      "favorite_label": "Favorite Avatars",
+      "yours": "My Avatars",
+      "created_by": "Created by {{name}}"
+    },
+    "social": {
+      "friends_label": "Friends ({{count}})",
+      "followed_label": "Followed Users ({{count}})",
+      "friend_requests_label": "Friend Requests ({{count}})",
+      "show_offline": "Show Offline"
+    },
+    "inbox": {
+      "inbox_label": "Inbox"
+    },
+    "search": {
+      "no_filters_for_users": "No filters available for users.",
+      "avatar_tags": "Avatar Tags",
+      "world_tags": "World Tags"
+    }
+  },
+  "overlay": {
+    "download": {
+      "downloading_label": "Downloading {{asset}}"
+    }
+  },
+  "popup_messages": {
+    "signed_in": {
+      "header": "Signed-In!",
+      "description": "Signed-In as {{name}}!"
+    },
+    "equipping_avatar": {
+      "header": "Equipping Avatar",
+      "description": "Equipping Avatar {{name}}, Please Wait."
+    },
+    "execute_script_client": {
+      "header": "Executed Script!",
+      "description": "Executed {{language}} script on the client-side"
+    },
+    "execute_script_server": {
+      "header": "Executed Script!",
+      "description": "Executed {{language}} script on the server-side"
+    },
+    "creating_instance": {
+      "header": "Creating Instance",
+      "description": "Creating instance for World {{name}}, Please Wait."
+    },
+    "joining_instance_host": {
+      "header": "Joining Instance",
+      "description": "Joining instance for World {{worldName}}, hosted by {{hostName}}, Please Wait."
+    },
+    "sent_invite": {
+      "header": "Sent Invite!",
+      "description": "Sent Invite to {{name}}"
+    },
+    "joining_instance_invited": {
+      "header": "Joining Instance",
+      "description": "Joining instance for World {{worldName}} invited by {{inviter}}, Please Wait."
+    },
+    "incorrect_credentials": {
+      "header": "Incorrect Credentials!",
+      "description": "Please try again!"
+    }
+  },
+  "inbox_messages": {
+    "invite_request": {
+      "header": "Invite Request from {{requester}}",
+      "ok_button_text": "Send Invite"
+    },
+    "receive_invite": {
+      "header": "Got Invite to {{worldName}}",
+      "description": "{{inviter}} would like you to join them in {{worldName}}",
+      "ok_button_text": "Join"
+    }
+  },
+  "inputs": {
+    "username_input": "Username",
+    "password_input": "Password",
+    "2fa_input": "2FA Code",
+    "user_search": "User Search...",
+    "avatar_search": "Avatar Search...",
+    "world_search": "World Search...",
+    "script_code": "Script Code"
+  },
+  "buttons": {
+    "remove": "Remove",
+    "connect": "Connect",
+    "login": "Login",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "exit": "Exit",
+    "create_instance": "Create Instance",
+    "favorite": "Favorite",
+    "unfavorite": "Unfavorite",
+    "return": "Return",
+    "clear": "Clear",
+    "restart": "Restart",
+    "apply": "Apply",
+    "execute": "Execute",
+    "camera": {
+      "grabbable": "Grabbable",
+      "stream_camera": "Stream Cam",
+      "quality": "Quality",
+      "look_at_avatar": "Look at Avatar",
+      "timer": "Timer ({{time}})",
+      "follow_tracker": "Follow Tracker",
+      "follow_avatar": "Follow Avatar"
+    },
+    "home": {
+      "website": "Website",
+      "forum": "Forum",
+      "github": "GitHub",
+      "discord": "Discord",
+      "bluesky": "Bluesky",
+      "twitter": "X"
+    },
+    "vr": {
+      "use_snap_turning": "Use Snap Turning",
+      "use_smooth_turning": "Use Smooth Turning",
+      "calibrate": "Calibrate VR Height"
+    },
+    "security": {
+      "anyone": "Anyone",
+      "friends": "Friends"
+    },
+    "face_tracking": {
+      "mutations": "Mutations",
+      "cameras": "Cameras",
+      "gaze_mutation": {
+        "title": "Gaze Mutations",
+        "name": "Name",
+        "cecil": "Cecil",
+        "floor": "Floor",
+        "smoothness_mult": "SmoothnessMult"
+      }
+    },
+    "advanced": {
+      "client": "Client",
+      "server": "Server"
+    },
+    "current_avatar": {
+      "remove_profile": "Remove Profile",
+      "save_profile": "Save Profile",
+      "new_profile": "New Profile",
+      "reload_avatar": "Reload Avatar"
+    },
+    "current_world": {
+      "leave_instance": "Leave Instance"
+    }
+  },
+  "popularity": {
+    "hourly": "Hourly",
+    "daily": "Daily",
+    "weekly": "Weekly",
+    "monthly": "Monthly",
+    "yearly": "Yearly"
+  },
+  "tags": {
+    "avatars": {
+      "anime": "Anime",
+      "furry": "Furry",
+      "Robot": "Robot",
+      "realistic": "Realistic",
+      "funny": "Funny"
+    },
+    "worlds": {
+      "club": "Club",
+      "game": "Game",
+      "story": "Story",
+      "chill": "Chill",
+      "media": "Media",
+      "funny": "Funny"
+    }
+  },
+  "security": {
+    "scripts": "Scripts",
+    "physics": "Physics",
+    "audio": "Audio",
+    "ui": "UI",
+    "lights": "Lights",
+    "particles": "Particles"
   }
 }
